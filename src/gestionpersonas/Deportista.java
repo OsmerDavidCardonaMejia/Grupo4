@@ -1,13 +1,15 @@
+//Mirian Fabiola Guzman Moreno
+//202410050105
 package gestionpersonas;
 
-// Herencia: La clase Deportista hereda de la clase abstracta Persona
+// Herencia: Clase Deportista heredada de la clase abstracta Persona
 public class Deportista extends Persona 
 {
-    private String deporte; // Encapsulamiento
+    private String deporte; //Este es el encapsulamiento
 
     public Deportista(String nombre, int edad, String deporte)
     {
-        super(nombre, edad); // Llamada al constructor de la superclase
+        super(nombre, edad); // A este le llame, llamada al constructor de la superclase
         this.deporte = deporte;
     }
 
@@ -21,7 +23,7 @@ public class Deportista extends Persona
         this.deporte = deporte;
     }
 
-    // Polimorfismo: Implementación del método abstracto de la superclase
+    // Polimorfismo: Implementación es el método abstracto de la superclase
     @Override
     public void mostrarInfo() 
     {
