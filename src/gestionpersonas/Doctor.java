@@ -1,12 +1,12 @@
 package gestionpersonas;
 
-// Herencia: La clase Doctor hereda de la clase abstracta Persona
+// La clase Doctor se hereda de la clase abstracta Persona
 public class Doctor extends Persona 
 {
-    private String especialidad; // Encapsulamiento
+    private String especialidad; // Realizamos el Encapsulamiento
 
     public Doctor(String nombre, int edad, String especialidad) {
-        super(nombre, edad); // Llamada al constructor de la superclase
+        super(nombre, edad); // Se llama al constructor de la superclase
         this.especialidad = especialidad;
     }
 
@@ -20,7 +20,7 @@ public class Doctor extends Persona
         this.especialidad = especialidad;
     }
 
-    // Polimorfismo: Implementación del método abstracto de la superclase
+    // Polimorfismo: Se implementa el método abstracto de la superclase
     @Override
     public void mostrarInfo() 
     {
